@@ -36,11 +36,20 @@ const Home = () => {
 
 
     function handleScroll() {
-        if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight){
-          
-            return;}
-            dispatch(loadMore());
-            console.log("load")
+        if ((window.innerHeight + document.documentElement.scrollTop) +1 !== document.documentElement.offsetHeight) {
+            console.log("scroll")
+            console.log("innerHeight" , window.innerHeight);
+            console.log("scrolltop",document.documentElement.scrollTop);
+            console.log("offset",document.documentElement.offsetHeight);
+            console.log("windowscrollY", window.scrollY)
+            return;
+        }
+        
+        
+            
+
+        dispatch(loadMore());
+        console.log("load")
     }
 
     useEffect(() => {
