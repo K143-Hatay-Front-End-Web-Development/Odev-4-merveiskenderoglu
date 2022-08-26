@@ -1,0 +1,30 @@
+.detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    
+}
+
+.detailBody {
+    display: flex;
+    
+}
+
+
+.detailBody div {
+    max-width: 500px;
+    padding: 30px;
+    background-color: white;
+}
+
+.detailBody img {
+    height:100% ;
+    width: 100%;
+    object-fit: cover;
+}
+
+.detail h2 {
+    margin-left: 20px;
+}
